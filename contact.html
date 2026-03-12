@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IEEE O6U</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* إضافة بسيطة لضبط شكل الفورم */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: left;
+        }
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>IEEE O6U Student Branch</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="container" style="text-align: center; padding: 60px 0;">
+    <h2>Get In Touch</h2>
+    <p>Have a question or want to join us? Send us a message!</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <h3>Other Ways to Connect</h3>
+        <p>📍 Location: October 6 University, Giza, Egypt</p>
+        <p>📧 Email: info@ieee-o6u.org</p>
+    </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>IEEE O6U Student Branch – October 6 University, Egypt</p>
+  </div>
+</footer>
+
+</body>
+</html>
