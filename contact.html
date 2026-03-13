@@ -6,7 +6,6 @@
     <title>Contact Us - IEEE O6U</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* إضافة بسيطة لضبط شكل الفورم */
         form {
             display: flex;
             flex-direction: column;
@@ -20,13 +19,19 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 100%;
+            font-family: inherit;
         }
         .contact-info {
             margin-top: 40px;
-            padding: 20px;
-            background: #f9f9f9;
-            border-radius: 10px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: inline-block;
+            min-width: 300px;
         }
+        .contact-info h3 { color: #00629B; margin-bottom: 15px; }
+        .contact-info p { margin: 10px 0; color: #555; }
     </style>
 </head>
 <body>
@@ -46,27 +51,32 @@
   </div>
 </header>
 
-<section class="container" style="text-align: center; padding: 60px 0;">
-    <h2>Get In Touch</h2>
-    <p>Have a question or want to join us? Send us a message!</p>
+<section class="container" style="text-align: center; padding: 60px 20px;">
+    <h2 style="color: #00629B; font-size: 2.5em;">Get In Touch</h2>
+    <p style="color: #666;">Have a question? Send us a message and we'll get back to you!</p>
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+    <form action="https://formspree.io/f/mlgplrwl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn" style="background: #00629B; color: white; border: none; cursor: pointer; font-weight: bold;">Send Message</button>
     </form>
 
     <div class="contact-info">
         <h3>Other Ways to Connect</h3>
-        <p>📍 Location: October 6 University, Giza, Egypt</p>
-        <p>📧 Email: info@ieee-o6u.org</p>
+        <p><strong>📍 Location:</strong> October 6 University, Giza, Egypt</p>
+        <p><strong>📧 Email:</strong> <a href="mailto:info@ieee-o6u.org" style="color: #00629B; text-decoration: none;">info@ieee-o6u.org</a></p>
     </div>
 </section>
 
-<footer>
+<footer style="background: #222; color: white; padding: 40px 0; text-align: center;">
   <div class="container">
-    <p>IEEE O6U Student Branch – October 6 University, Egypt</p>
+    <p style="margin-bottom: 20px;">© 2026 IEEE O6U Student Branch – October 6 University</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/IEEEO6U" target="_blank" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">Facebook</a>
+      <a href="https://www.instagram.com/ieee_o6u" target="_blank" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">Instagram</a>
+      <a href="https://www.linkedin.com/company/ieee-o6u/" target="_blank" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">LinkedIn</a>
+    </div>
   </div>
 </footer>
 
