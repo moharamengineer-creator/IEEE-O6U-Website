@@ -146,3 +146,23 @@ footer{
   0%{opacity:0;}
   100%{opacity:1;}
 }
+/* Join Page Styles */
+.join-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 6px solid #00629B;
+}
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;
+}
+.submit-btn {
+    width: 100%; background: #00629B; color: white; padding: 12px; border: none;
+    border-radius: 6px; font-size: 16px; cursor: pointer; transition: 0.3s;
+}
+.submit-btn:hover { background: #004a75; }
