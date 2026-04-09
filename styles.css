@@ -3,15 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط عملي وشيك جداً */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
-  scroll-behavior: smooth; /* عشان النزول والطلوع في الصفحة يكون ناعم */
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #f4f7f9;
+  color: #333;
 }
 
 /* Container */
@@ -23,7 +24,7 @@ body {
 
 /* Header + Navbar */
 header {
-  background: #00629B; /* لون IEEE الرسمي */
+  background: #00629B; /* IEEE Official Blue */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -51,14 +52,14 @@ nav ul li a {
   font-weight: bold;
   font-size: 1.1em;
   transition: 0.3s;
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 5px;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
   color: #00629B;
-  background: white; /* بيعمل شكل زرار لما تقف عليه */
+  background: white;
 }
 
 /* Hero Section */
@@ -82,6 +83,7 @@ nav ul li a.active {
   color: #555;
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 12px 30px;
@@ -91,37 +93,62 @@ nav ul li a.active {
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.1em;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   border: 2px solid #00629B;
 }
 
 .btn:hover {
   background: white;
   color: #00629B;
+  transform: scale(1.05);
 }
 
-/* Cards (Teams & Events) */
+/* Cards (Teams & Events) Styling */
 .team-cards, .event-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 30px;
 }
 
 .team-card, .event-card {
-  transition: 0.3s ease-in-out;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* ظل خفيف في العادي */
+  position: relative;
+  overflow: hidden;
 }
 
+/* Hover Effect for Cards */
 .team-card:hover, .event-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15) !important;
+  transform: translateY(-10px); /* يترفع لفوق */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important; /* ظل قوي */
 }
 
-/* Social Links Hover Effect in Footer */
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
 .social-links a {
   transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
 .social-links a:hover {
@@ -134,38 +161,28 @@ nav ul li a.active {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Join Page Styles (لو احتجتها في المستقبل) */
-.join-container {
-    max-width: 500px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-top: 6px solid #00629B;
-}
-.form-group { margin-bottom: 15px; }
-.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
-.form-group input, .form-group select, .form-group textarea {
-    width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;
-}
-.submit-btn {
-    width: 100%; background: #00629B; color: white; padding: 12px; border: none;
-    border-radius: 6px; font-size: 16px; cursor: pointer; transition: 0.3s;
-}
-.submit-btn:hover { background: #004a75; }
-
-/* Responsive Media Queries (عشان الموبايل) */
+/* Responsive Media Queries (Mobile Friendly) */
 @media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  
   nav ul li {
     display: block;
     margin: 10px 0;
   }
+  
+  .hero {
+    padding: 50px 20px;
+  }
+
   .hero h2 {
     font-size: 2em;
   }
+
   .team-card, .event-card {
     width: 100% !important;
     max-width: 350px;
+    margin: 0 auto;
   }
 }
