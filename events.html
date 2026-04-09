@@ -55,33 +55,39 @@
         <form id="registration-form">
             <div style="margin-bottom: 15px;">
                 <label style="font-weight: bold; font-size: 0.9em;">Full Name</label>
-                <input type="text" name="name" placeholder="الاسم بالكامل" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                <input type="text" name="name" placeholder="Full Name" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
             </div>
             
-            <div style="margin-bottom: 15px;">
-                <label style="font-weight: bold; font-size: 0.9em;">WhatsApp Number</label>
-                <input type="tel" name="phone" placeholder="01xxxxxxxxx" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                <div>
+                    <label style="font-weight: bold; font-size: 0.9em;">WhatsApp Number</label>
+                    <input type="tel" name="whatsapp" placeholder="01xxxxxxxxx" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                </div>
+                <div>
+                    <label style="font-weight: bold; font-size: 0.9em;">Phone Number</label>
+                    <input type="tel" name="phone" placeholder="Other phone" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                </div>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
                 <div>
                     <label style="font-weight: bold; font-size: 0.9em;">University</label>
-                    <input type="text" name="university" placeholder="الجامعة" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                    <input type="text" name="university" placeholder="University" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
                 </div>
                 <div>
                     <label style="font-weight: bold; font-size: 0.9em;">Faculty</label>
-                    <input type="text" name="faculty" placeholder="الكلية" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                    <input type="text" name="faculty" placeholder="Faculty" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
                 </div>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
                 <div>
                     <label style="font-weight: bold; font-size: 0.9em;">Department</label>
-                    <input type="text" name="department" placeholder="القسم" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                    <input type="text" name="department" placeholder="Department" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
                 </div>
                 <div>
                     <label style="font-weight: bold; font-size: 0.9em;">Student Code</label>
-                    <input type="text" name="student_code" placeholder="كود الطالب" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                    <input type="text" name="student_code" placeholder="Student Code" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
                 </div>
             </div>
 
@@ -116,8 +122,8 @@
 </footer>
 
 <script>
-  // اللينك اللي إنت لسه مطلعه
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwKJlkM1DG7sZ7KpzbeEE7hEk-1hF2WRozZtnVLHpzwKLDvVbL7zHf2gtJ6U-S9c8MADPA/exec'
+  // اللينك اللي إنت بعته
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyfIQ0u2yIWxEQcAjoMb2kusIn3x0-1MeMbrmfzFCl4SDszOIN90AIE1L2dOfVQ__53Vg/exec'
   
   const form = document.querySelector('#registration-form')
   const btn = document.querySelector('#submit-btn')
