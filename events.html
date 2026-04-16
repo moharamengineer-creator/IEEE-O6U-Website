@@ -25,7 +25,7 @@
 
 <section class="container" style="padding: 60px 20px; text-align: center;">
     <h2 style="color: #00629B; font-size: 2.5em;">Our Events</h2>
-    <p style="color: #666;">Explore our workshops, sessions, and competitions.</p>
+    <p style="color: #666;">Explore our workshops, sessions, and upcoming competitions.</p>
 
     <h3 style="margin-top: 50px; color: #00629B; border-bottom: 2px solid #00629B; display: inline-block; padding-bottom: 10px;">Upcoming Events</h3>
     
@@ -37,15 +37,16 @@
         <p style="color: #28a745; font-weight: bold; font-size: 0.85em;">[First Edition]</p>
         <p style="color: #555; font-size: 0.9em; margin: 10px 0;">Join us for the most anticipated biomedical summit at O6U.</p>
         <span style="display: block; margin-top: 15px; font-size: 0.85em; color: #444; font-weight: bold;">📅 Date: April 19, 2026</span>
-        <a href="#register-section" style="display: inline-block; margin-top: 15px; background: #00629B; color: white; padding: 8px 20px; border-radius: 5px; text-decoration: none; font-size: 0.9em;">Register Below ↓</a>
+        <a href="#register-section" style="display: inline-block; margin-top: 15px; background: #00629B; color: white; padding: 8px 20px; border-radius: 5px; text-decoration: none; font-size: 0.9em;">Register Now ↓</a>
       </div>
 
-      <div class="event-card" style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px; border-top: 5px solid #FFD700;">
+      <div class="event-card" onclick="showSoon()" style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px; border-top: 5px solid #FFD700;">
         <div style="background: #FFD700; color: #000; padding: 5px 12px; border-radius: 5px; font-weight: bold; font-size: 0.8em; display: inline-block; margin-bottom: 15px;">Coming Soon</div>
         <h4>Robotics Workshop</h4>
         <p style="color: #555; font-size: 0.9em; margin: 10px 0;">A deep dive into building your first robot from scratch.</p>
-        <span style="display: block; margin-top: 15px; font-size: 0.85em; color: #00629B; font-weight: bold;">Date: March 20, 2026</span>
+        <span style="display: block; margin-top: 15px; font-size: 0.85em; color: #00629B; font-weight: bold;">Date: May 20, 2026</span>
       </div>
+
     </div>
 
     <div id="register-section" style="max-width: 600px; margin: 60px auto; background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-top: 10px solid #00629B; text-align: left;">
@@ -87,7 +88,7 @@
                 </div>
                 <div>
                     <label style="font-weight: bold; font-size: 0.9em;">Student Code</label>
-                    <input type="text" name="student_code" placeholder="Student Code" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
+                    <input type="text" name="student_code" placeholder="Student ID" style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px;" required>
                 </div>
             </div>
 
@@ -112,7 +113,7 @@
 
 <footer style="background: #222; color: white; padding: 40px 0; text-align: center;">
   <div class="container">
-    <p style="margin-bottom: 20px;">© 2026 IEEE O6U Student Branch – October 6 University</p>
+    <p style="margin-bottom: 20px; font-weight: bold;">© 2026 IEEE O6U Student Branch – October 6 University</p>
     <div class="social-links">
       <a href="https://www.facebook.com/IEEEO6U" target="_blank" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">Facebook</a>
       <a href="https://www.instagram.com/ieee_o6u" target="_blank" style="color: white; text-decoration: none; margin: 0 10px; font-weight: bold;">Instagram</a>
@@ -122,7 +123,12 @@
 </footer>
 
 <script>
-  // اللينك اللي إنت بعته
+  // Soon Alert Function
+  function showSoon() {
+      alert("Coming Soon! 🚀 Registration for this event will open shortly. Stay tuned to our social media!");
+  }
+
+  // Google Script URL
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyfIQ0u2yIWxEQcAjoMb2kusIn3x0-1MeMbrmfzFCl4SDszOIN90AIE1L2dOfVQ__53Vg/exec'
   
   const form = document.querySelector('#registration-form')
